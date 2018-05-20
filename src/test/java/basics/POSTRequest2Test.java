@@ -2,7 +2,6 @@ package basics;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -91,7 +90,7 @@ public class POSTRequest2Test {
 		String deleteBody = response.getBody().prettyPrint();
 		JsonPath jsonPathDeleteBody = new JsonPath(deleteBody);
 		String placeIdDeleteBody = jsonPathDeleteBody.get("status");
-		AssertJUnit.assertEquals(placeIdDeleteBody, "OK");
+		Assert.assertEquals(placeIdDeleteBody, "OK");
 
 	}
 	

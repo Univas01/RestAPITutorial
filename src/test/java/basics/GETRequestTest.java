@@ -1,8 +1,8 @@
 package basics;
 
 import org.testng.annotations.Test;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import io.restassured.RestAssured;
@@ -49,7 +49,7 @@ public class GETRequestTest {
 	
 		String resonseBody = response.getBody().prettyPrint();
 		JsonPath jsonPath = new JsonPath(resonseBody);
-		AssertJUnit.assertEquals(jsonPath.get("destination_addresses[0]"), "Manchester, UK");
+		Assert.assertEquals(jsonPath.get("destination_addresses[0]"), "Manchester, UK");
 		
 		
 	}
