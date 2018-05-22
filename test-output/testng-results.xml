@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3382" started-at="2018-05-20T16:12:28Z" finished-at="2018-05-20T16:12:31Z">
+  <suite name="Default suite" duration-ms="3883" started-at="2018-05-22T03:40:18Z" finished-at="2018-05-22T03:40:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3382" started-at="2018-05-20T16:12:28Z" finished-at="2018-05-20T16:12:31Z">
+    <test name="Default test" duration-ms="3883" started-at="2018-05-22T03:40:18Z" finished-at="2018-05-22T03:40:22Z">
       <class name="twitter.PostStatusesTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.PostStatusesTest@6093dd95]" name="setUp" is-config="true" duration-ms="486" started-at="2018-05-20T16:12:28Z" finished-at="2018-05-20T16:12:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.PostStatusesTest@6093dd95]" name="setUp" is-config="true" duration-ms="502" started-at="2018-05-22T03:40:18Z" finished-at="2018-05-22T03:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="postRequest()[pri:0, instance:twitter.PostStatusesTest@6093dd95]" name="postRequest" duration-ms="2810" started-at="2018-05-20T16:12:28Z" finished-at="2018-05-20T16:12:31Z">
+        <test-method status="PASS" signature="postRequest()[pri:0, instance:twitter.PostStatusesTest@6093dd95]" name="postRequest" duration-ms="2616" started-at="2018-05-22T03:40:19Z" finished-at="2018-05-22T03:40:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postRequest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.PostStatusesTest@6093dd95]" name="setUp" is-config="true" duration-ms="0" started-at="2018-05-22T03:40:22Z" finished-at="2018-05-22T03:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="showTweet()[pri:0, instance:twitter.PostStatusesTest@6093dd95]" name="showTweet" duration-ms="344" started-at="2018-05-22T03:40:22Z" depends-on-methods="twitter.PostStatusesTest.postRequest" finished-at="2018-05-22T03:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showTweet -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.PostStatusesTest@6093dd95]" name="setUp" is-config="true" duration-ms="0" started-at="2018-05-22T03:40:22Z" finished-at="2018-05-22T03:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:twitter.PostStatusesTest@6093dd95]" name="deleteTweet" duration-ms="356" started-at="2018-05-22T03:40:22Z" depends-on-methods="twitter.PostStatusesTest.showTweet" finished-at="2018-05-22T03:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
       </class> <!-- twitter.PostStatusesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -20,7 +20,7 @@ public class GETRequestTest {
 		RestAssured.basePath = "/maps/api";
 	}
 	
-	@Test
+	@Test (enabled = false)
 	public void getRequest(){
 
 		given()
@@ -31,12 +31,12 @@ public class GETRequestTest {
 		.when()
 			.get("/distancematrix/json")
 		.then()
+			.log().all()
 			.statusCode(200)
-			.and()
 			.body("rows[0].elements[0].distance.text", equalTo("342 km"));
 	}
 	
-	@Test  (enabled = false)
+	@Test  (enabled = true)
 	public void getRequestBody(){
 		Response response = 
 		given()

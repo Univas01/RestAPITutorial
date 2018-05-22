@@ -5,7 +5,9 @@
     <classes>
       <class name="twitter.PostStatusesTest">
         <methods>
+          <include name="showTweet"/>
           <include name="postRequest"/>
+          <include name="deleteTweet"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- twitter.PostStatusesTest -->
