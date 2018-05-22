@@ -3,13 +3,17 @@ package twitter;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
+import org.apache.log4j.Logger;
 
 public class PostStatusesTest {
+	
+	Logger log = Logger.getLogger(PostStatusesTest.class.getClass());
 
 	String consumerKey = "2nJxMyZherdxMb5toAfCGcORd";
 	String consumerSecret = "jvGVLiXrGQW4EvVWrIWvyAJZbAAZbZ4TB2I8LodLwSOSA6SlUC";
@@ -21,14 +25,17 @@ public class PostStatusesTest {
 
 	@BeforeMethod
 	public void setUp() {
-
+	
 		RestAssured.baseURI = "https://api.twitter.com";
 		RestAssured.basePath = "/1.1/statuses";
 	}
 
 	@Test
 	public void postRequest(){
-
+		
+		log.info("*****Inside postRequest Method*****");
+		log.debug("*****Inside postRequest Method*****");
+		
 		response = 
 		given()
 			.log()
@@ -41,7 +48,9 @@ public class PostStatusesTest {
 		.then()
 			.body("user.name", equalTo("RESTful Test"))
 			.extract().response();
-			
+		
+		log.info(response.getBody().prettyPrint());
+		
 		String responseBody = response.getBody().prettyPrint();
 		JsonPath jsonPath = new JsonPath(responseBody);
 		tweetId = jsonPath.get("id_str");
@@ -56,20 +65,29 @@ public class PostStatusesTest {
 	@Test (enabled=true, dependsOnMethods={"postRequest"})
 	public void showTweet(){
 		
+		log.info("*****Inside showTweet Method*****");
+		log.debug("*****Inside showTweet Method*****");
+		
 		response = 
 		given()
 			.auth()
 			.oauth(consumerKey, consumerSecret, accessToken, accessSecret)
 			.queryParam("id", tweetId)
 		.when()
-			.get("/show.json");
+			.get("/show.json")
+		.then()
+			.statusCode(200)
+			.extract().response();
+		
+		log.info(response.getBody().prettyPrint());
 
-		response.getBody().prettyPrint();
-		Assert.assertEquals(response.statusCode(), 200);
 	}
 
 	@Test (enabled=true, dependsOnMethods={"showTweet"})
 	public void deleteTweet(){
+		
+		log.info("*****Inside deleteTweet Method*****");
+		log.debug("*****Inside deleteTweet Method*****");
 
 		response = 
 		given()
@@ -80,6 +98,8 @@ public class PostStatusesTest {
 			.post("/destroy/{id}.json");
 		response.getBody().prettyPrint();
 		Assert.assertEquals(response.statusCode(), 200);
+		
+		log.info(response.getBody().prettyPrint());
 
 		}
 	}

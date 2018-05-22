@@ -22,7 +22,7 @@ public class POSTRequest2Test {
 		RestAssured.basePath = "/maps/api";
 	}
 	
-	@Test (enabled = false)
+	@Test (enabled = true)
 	public void getRequest(){
 
 		given()
