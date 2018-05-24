@@ -38,8 +38,8 @@ public class PostStatuses2Test {
 		
 		response = 
 		given()
-			.auth()
-			.oauth(consumerKey, consumerSecret, accessToken, accessSecret)
+			.log().all()
+			.auth().oauth(consumerKey, consumerSecret, accessToken, accessSecret)
 			.queryParam("status", "My First Tweet")
 		.when()
 			.post("/update.json")
