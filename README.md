@@ -8,6 +8,6 @@ It covers a few line of codes to post, read and delete tweets.
 As stated above, the main purpose of this project is to understand the use of version control - github
 
 ## Deployment
-Deployment can be on any server
+Deployment can be on any server.
 
 ## How to Contribute
