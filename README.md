@@ -5,7 +5,7 @@ This is RestAPI beginners project
 It covers a few line of codes to post, read and delete tweets. 
 
 ## Purpose
-As stated above, the main purpose of this project is to understand the use of version control (git)
+As stated above, the main purpose of this project is to understand the use of version control (github)
 
 ## Deployment
 Deployment can be on any server
