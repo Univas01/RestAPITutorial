@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4061" started-at="2018-05-22T20:47:54Z" finished-at="2018-05-22T20:47:58Z">
+  <suite name="Default suite" duration-ms="3208" started-at="2018-05-28T14:44:56Z" finished-at="2018-05-28T14:45:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4061" started-at="2018-05-22T20:47:54Z" finished-at="2018-05-22T20:47:58Z">
-      <class name="twitter.PostStatusesTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.PostStatusesTest@69ea3742]" name="setUp" is-config="true" duration-ms="474" started-at="2018-05-22T20:47:54Z" finished-at="2018-05-22T20:47:54Z">
+    <test name="Default test" duration-ms="3208" started-at="2018-05-28T14:44:56Z" finished-at="2018-05-28T14:45:00Z">
+      <class name="twitter.CompleteTwitterWorkflowTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="setUp" is-config="true" duration-ms="819" started-at="2018-05-28T14:44:56Z" finished-at="2018-05-28T14:44:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="postRequest()[pri:0, instance:twitter.PostStatusesTest@69ea3742]" name="postRequest" duration-ms="2783" started-at="2018-05-22T20:47:54Z" finished-at="2018-05-22T20:47:57Z">
+        <test-method status="PASS" signature="firstTweet()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="firstTweet" duration-ms="2354" started-at="2018-05-28T14:44:57Z" finished-at="2018-05-28T14:45:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postRequest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.PostStatusesTest@69ea3742]" name="setUp" is-config="true" duration-ms="0" started-at="2018-05-22T20:47:57Z" finished-at="2018-05-22T20:47:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="showTweet()[pri:0, instance:twitter.PostStatusesTest@69ea3742]" name="showTweet" duration-ms="388" started-at="2018-05-22T20:47:57Z" depends-on-methods="twitter.PostStatusesTest.postRequest" finished-at="2018-05-22T20:47:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- showTweet -->
-        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:twitter.PostStatusesTest@69ea3742]" name="deleteTweet" duration-ms="367" started-at="2018-05-22T20:47:58Z" depends-on-methods="twitter.PostStatusesTest.showTweet" finished-at="2018-05-22T20:47:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteTweet -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.PostStatusesTest@69ea3742]" name="setUp" is-config="true" duration-ms="0" started-at="2018-05-22T20:47:58Z" finished-at="2018-05-22T20:47:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-      </class> <!-- twitter.PostStatusesTest -->
+        </test-method> <!-- firstTweet -->
+      </class> <!-- twitter.CompleteTwitterWorkflowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

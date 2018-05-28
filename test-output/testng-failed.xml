@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="twitter.PostStatusesTest">
+      <class name="twitter.CompleteTwitterWorkflowTest">
         <methods>
-          <include name="showTweet"/>
-          <include name="postRequest"/>
-          <include name="deleteTweet"/>
           <include name="setUp"/>
+          <include name="firstTweet"/>
         </methods>
-      </class> <!-- twitter.PostStatusesTest -->
+      </class> <!-- twitter.CompleteTwitterWorkflowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
