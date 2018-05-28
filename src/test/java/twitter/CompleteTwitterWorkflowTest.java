@@ -79,7 +79,22 @@ public class CompleteTwitterWorkflowTest {
 		.then()
 			.spec(responseSpec)
 			.extract().response().prettyPrint();
+	}
+	
+	@Test (enabled=true, dependsOnMethods={"showTweet"})
+	public void deleteTweet(){
 		
+		response = 
+		given()
+			.spec(requestSpec)
+			.pathParam("id", tweetId)
+		.when()
+			.post("/destroy/{id}.json")
+		.then()
+			.spec(responseSpec)
+			.extract().response();
+		response.getBody().prettyPrint();
+		Assert.assertEquals(response.statusCode(), 200);
 	}
 		
 
