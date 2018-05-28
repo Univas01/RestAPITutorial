@@ -39,7 +39,6 @@ public class CompleteTwitterWorkflowTest {
 		requestBuilder.setBaseUri("https://api.twitter.com");
 		requestBuilder.setBasePath("/1.1/statuses");
 		requestBuilder.setAuth(authScheme);
-		requestBuilder.addQueryParam("status", "My first tweet this week");
 		requestSpec = requestBuilder.build();
 
 		responseBuilder = new ResponseSpecBuilder();
@@ -56,6 +55,7 @@ public class CompleteTwitterWorkflowTest {
 		response = 
 		given()
 			.spec(requestSpec)
+			.queryParam("status", "My first tweet this week")
 		.when()
 			.post("/update.json")
 		.then()

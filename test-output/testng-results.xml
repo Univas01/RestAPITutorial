@@ -2,35 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3599" started-at="2018-05-28T15:08:37Z" finished-at="2018-05-28T15:08:41Z">
+  <suite name="Default suite" duration-ms="4314" started-at="2018-05-28T15:24:07Z" finished-at="2018-05-28T15:24:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3599" started-at="2018-05-28T15:08:37Z" finished-at="2018-05-28T15:08:41Z">
+    <test name="Default test" duration-ms="4314" started-at="2018-05-28T15:24:07Z" finished-at="2018-05-28T15:24:11Z">
       <class name="twitter.CompleteTwitterWorkflowTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="setUp" is-config="true" duration-ms="636" started-at="2018-05-28T15:08:37Z" finished-at="2018-05-28T15:08:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="setUp" is-config="true" duration-ms="654" started-at="2018-05-28T15:24:07Z" finished-at="2018-05-28T15:24:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="firstTweet()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="firstTweet" duration-ms="2231" started-at="2018-05-28T15:08:38Z" finished-at="2018-05-28T15:08:40Z">
+        <test-method status="PASS" signature="firstTweet()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="firstTweet" duration-ms="2937" started-at="2018-05-28T15:24:08Z" finished-at="2018-05-28T15:24:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstTweet -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="setUp" is-config="true" duration-ms="3" started-at="2018-05-28T15:08:40Z" finished-at="2018-05-28T15:08:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="setUp" is-config="true" duration-ms="1" started-at="2018-05-28T15:24:11Z" finished-at="2018-05-28T15:24:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="showTweet()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="showTweet" duration-ms="328" started-at="2018-05-28T15:08:40Z" depends-on-methods="twitter.CompleteTwitterWorkflowTest.firstTweet" finished-at="2018-05-28T15:08:40Z">
+        <test-method status="PASS" signature="showTweet()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="showTweet" duration-ms="350" started-at="2018-05-28T15:24:11Z" depends-on-methods="twitter.CompleteTwitterWorkflowTest.firstTweet" finished-at="2018-05-28T15:24:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- showTweet -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="setUp" is-config="true" duration-ms="1" started-at="2018-05-28T15:08:40Z" finished-at="2018-05-28T15:08:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="deleteTweet" duration-ms="366" started-at="2018-05-28T15:08:40Z" depends-on-methods="twitter.CompleteTwitterWorkflowTest.showTweet" finished-at="2018-05-28T15:08:41Z">
+        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="deleteTweet" duration-ms="322" started-at="2018-05-28T15:24:11Z" depends-on-methods="twitter.CompleteTwitterWorkflowTest.showTweet" finished-at="2018-05-28T15:24:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteTweet -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:twitter.CompleteTwitterWorkflowTest@e25b2fe]" name="setUp" is-config="true" duration-ms="0" started-at="2018-05-28T15:24:11Z" finished-at="2018-05-28T15:24:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
       </class> <!-- twitter.CompleteTwitterWorkflowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
