@@ -18,6 +18,11 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 
 public class CompleteTwitterWorkflowTest {
+	
+	String consumerKey = "2nJxMyZherdxMb5toAfCGcORd";
+	String consumerSecret = "jvGVLiXrGQW4EvVWrIWvyAJZbAAZbZ4TB2I8LodLwSOSA6SlUC";
+	String accessToken = "998043340636647425-D1jtqGUC6AvVzzO3wmAhjTiKMcn7olq";
+	String accessSecret = "5xXymi1PcaITrKfoU6wHzslCwPlbm9C76wSbq9be9GuXv";
 
 	RequestSpecBuilder requestBuilder;
 	static RequestSpecification requestSpec;
@@ -28,13 +33,8 @@ public class CompleteTwitterWorkflowTest {
 
 	@BeforeMethod
 	public void setUp() {
-
-		String consumerKey = "2nJxMyZherdxMb5toAfCGcORd";
-		String consumerSecret = "jvGVLiXrGQW4EvVWrIWvyAJZbAAZbZ4TB2I8LodLwSOSA6SlUC";
-		String accessToken = "998043340636647425-D1jtqGUC6AvVzzO3wmAhjTiKMcn7olq";
-		String accessSecret = "5xXymi1PcaITrKfoU6wHzslCwPlbm9C76wSbq9be9GuXv";
+	
 		AuthenticationScheme authScheme = RestAssured.oauth(consumerKey, consumerSecret, accessToken, accessSecret);
-
 		requestBuilder = new RequestSpecBuilder();
 		requestBuilder.setBaseUri("https://api.twitter.com");
 		requestBuilder.setBasePath("/1.1/statuses");
