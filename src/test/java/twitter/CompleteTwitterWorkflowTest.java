@@ -55,7 +55,7 @@ public class CompleteTwitterWorkflowTest {
 		response = 
 		given()
 			.spec(requestSpec)
-			.queryParam("status", "My first tweet this week")
+			.queryParam("status", "My second tweet this week")
 		.when()
 			.post("/update.json")
 		.then()
