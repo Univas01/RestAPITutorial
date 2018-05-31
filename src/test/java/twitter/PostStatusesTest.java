@@ -100,6 +100,5 @@ public class PostStatusesTest {
 		Assert.assertEquals(response.statusCode(), 200);
 		
 		log.info(response.getBody().prettyPrint());
-
 		}
 	}

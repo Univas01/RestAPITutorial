@@ -1,6 +1,6 @@
 package com.frameworkBuilder.statuses;
 
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.frameworkBuilder.common.RestUtilities;
 import com.frameworkBuilder.constants.EndPoints;
@@ -17,7 +17,7 @@ public class UserTimelineTest {
 	ResponseSpecification responseSpec;
 	Response response;
 
-	@BeforeClass
+	@BeforeMethod
 	public void setUp() {
 		requestSpec = RestUtilities.getRequestSpecification();
 		requestSpec.queryParam("screen_name", "RestfulTest");

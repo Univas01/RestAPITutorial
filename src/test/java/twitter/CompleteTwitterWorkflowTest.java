@@ -32,7 +32,7 @@ public class CompleteTwitterWorkflowTest {
 	String tweetId;
 
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() { 
 	
 		AuthenticationScheme authScheme = RestAssured.oauth(consumerKey, consumerSecret, accessToken, accessSecret);
 		requestBuilder = new RequestSpecBuilder();
@@ -55,7 +55,7 @@ public class CompleteTwitterWorkflowTest {
 		response = 
 		given()
 			.spec(requestSpec)
-			.queryParam("status", "My second tweet this week")
+			.queryParam("status", "My Seventh tweet this week")
 		.when()
 			.post("/update.json")
 		.then()

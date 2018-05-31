@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3669" started-at="2018-05-30T16:52:38Z" finished-at="2018-05-30T16:52:41Z">
+  <suite name="Regression Suite" duration-ms="4816" started-at="2018-05-31T14:09:58Z" finished-at="2018-05-31T14:10:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3669" started-at="2018-05-30T16:52:38Z" finished-at="2018-05-30T16:52:41Z">
-      <class name="com.frameworkBuilder.statuses.UserTimelineTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.frameworkBuilder.statuses.UserTimelineTest@589838eb]" name="setUp" is-config="true" duration-ms="821" started-at="2018-05-30T16:52:38Z" finished-at="2018-05-30T16:52:38Z">
+    <test name="RestAssured Test" duration-ms="4816" started-at="2018-05-31T14:09:58Z" finished-at="2018-05-31T14:10:02Z">
+      <class name="com.frameworkBuilder.statuses.TwitterEndtoEndTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.frameworkBuilder.statuses.TwitterEndtoEndTest@402a079c]" name="setUp" is-config="true" duration-ms="765" started-at="2018-05-31T14:09:58Z" finished-at="2018-05-31T14:09:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="readTweetsTest()[pri:0, instance:com.frameworkBuilder.statuses.UserTimelineTest@589838eb]" name="readTweetsTest" duration-ms="2819" started-at="2018-05-30T16:52:38Z" finished-at="2018-05-30T16:52:41Z">
+        <test-method status="PASS" signature="postTweet()[pri:0, instance:com.frameworkBuilder.statuses.TwitterEndtoEndTest@402a079c]" name="postTweet" duration-ms="2950" started-at="2018-05-31T14:09:58Z" finished-at="2018-05-31T14:10:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.frameworkBuilder.statuses.TwitterEndtoEndTest@402a079c]" name="setUp" is-config="true" duration-ms="2" started-at="2018-05-31T14:10:01Z" finished-at="2018-05-31T14:10:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="showTweet()[pri:0, instance:com.frameworkBuilder.statuses.TwitterEndtoEndTest@402a079c]" name="showTweet" duration-ms="295" started-at="2018-05-31T14:10:01Z" depends-on-methods="com.frameworkBuilder.statuses.TwitterEndtoEndTest.postTweet" finished-at="2018-05-31T14:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showTweet -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.frameworkBuilder.statuses.TwitterEndtoEndTest@402a079c]" name="setUp" is-config="true" duration-ms="2" started-at="2018-05-31T14:10:02Z" finished-at="2018-05-31T14:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:com.frameworkBuilder.statuses.TwitterEndtoEndTest@402a079c]" name="deleteTweet" duration-ms="279" started-at="2018-05-31T14:10:02Z" depends-on-methods="com.frameworkBuilder.statuses.TwitterEndtoEndTest.showTweet" finished-at="2018-05-31T14:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- com.frameworkBuilder.statuses.TwitterEndtoEndTest -->
+      <class name="com.frameworkBuilder.statuses.UserTimelineTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.frameworkBuilder.statuses.UserTimelineTest@3fee9989]" name="setUp" is-config="true" duration-ms="1" started-at="2018-05-31T14:10:02Z" finished-at="2018-05-31T14:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="readTweetsTest()[pri:0, instance:com.frameworkBuilder.statuses.UserTimelineTest@3fee9989]" name="readTweetsTest" duration-ms="471" started-at="2018-05-31T14:10:02Z" finished-at="2018-05-31T14:10:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readTweetsTest -->
       </class> <!-- com.frameworkBuilder.statuses.UserTimelineTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- RestAssured Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>
